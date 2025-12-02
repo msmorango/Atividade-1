@@ -58,6 +58,11 @@ public class cadastroVIEW extends javax.swing.JFrame {
 
         btnCadastrar.setBackground(new java.awt.Color(153, 255, 255));
         btnCadastrar.setText("Cadastrar");
+        btnCadastrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCadastrarMouseClicked(evt);
+            }
+        });
         btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCadastrarActionPerformed(evt);
@@ -181,6 +186,11 @@ public class cadastroVIEW extends javax.swing.JFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void btnCadastrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCadastrarMouseClicked
+        
+        System.out.println("Cadastrado com sucesso!");
+    }//GEN-LAST:event_btnCadastrarMouseClicked
 
     /**
      * @param args the command line arguments
